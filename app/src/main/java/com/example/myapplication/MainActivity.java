@@ -30,7 +30,7 @@ EditText edtName;
         btnClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                textView.setText((edtName.text).toString());
             }
         });
 
