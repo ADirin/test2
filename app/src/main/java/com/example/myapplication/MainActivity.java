@@ -17,10 +17,9 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 // This is a method
 TextView myText;
-
 Button btnClick;
 EditText edtName;
-
+// this is the onCreate metho
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +29,7 @@ EditText edtName;
         btnClick.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                textView.setText((edtName.text).toString());
+                myText.setText((edtName).toString());
             }
         });
 
